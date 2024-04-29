@@ -1,0 +1,483 @@
+
+
+/*FUENTES*/
+/* "PT Sans" "Montserrat" */
+
+/*GLOBALES*/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+
+* ,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+h1 , h2 ,h3 ,h4{
+    font-family: "Montserrat" , sans-serif;
+}
+
+h1{
+    font-size: 4.5rem;
+    color: burlywood;
+}
+  h2{
+    font-size: 3.5rem;
+    color: rgb(245, 176, 96);
+    text-transform: capitalize;
+    text-align: center;
+}
+    h3{
+    font-size: 2.6rem;
+    color: black;
+    text-transform: capitalize;
+    text-align: center;
+}
+      h4{
+    font-size: 2.3rem;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+p{
+    font-size: 1.6rem;
+    font-family: "Montserrat" , sans-serif;
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+
+nav a{
+    padding: 1rem;
+    color: rgb(255, 254, 253);
+    font-family: "Montserrat";
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: capitalize
+
+}
+
+/*header*/
+
+header{
+    background-image:url(../imagenes/banner.jpg) ;
+    height: 60rem;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.text_parrafo--header{font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+
+/* clases */
+
+.logo{
+    text-decoration: none;
+}
+
+.text_h1{
+    font-size: 4.5rem;
+    color: rgb(248, 246, 246);
+    font-family: "Montserrat";
+    font-weight: 300;
+    
+}
+.display_flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10rem;
+    padding: 4rem 0;
+    
+}
+
+.text_centro{
+    text-align: center;
+}
+
+.contenedor_main{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    column-gap: 2rem;
+    
+    
+}
+
+.nuestro_blog1, .nuestro_blog2, {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    margin-top: 4rem;
+}
+
+
+
+
+.img_blog1{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+a.button:hover{color: rgb(212, 233, 20);}
+
+.button{
+    display: inline-block;
+    font-size: 1.5rem;
+    color: white;
+    background-color: black;
+    font-family: "Montserrat";
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    
+}
+/*aside*/
+
+.precio_curso, .cupo_curso{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-transform: capitalize;
+}
+
+
+.display_aside{
+    display: block;
+}
+ul{padding: 0 0;}
+li{font-size: 2rem;
+font-weight: 700;
+font-family: "Montserrat";
+list-style: none;
+margin: 2rem auto;
+text-transform: capitalize;}
+
+.button_cursos{
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    height: 4rem;
+    width: fit-content;
+    padding: 1rem 2rem;
+}
+
+
+
+.aside1 , .aside2{
+    border-bottom: 0.2rem solid black;
+
+}
+
+/*footer*/
+footer{
+    margin-top: 15rem;
+}
+
+.conteiner_footer{display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(41, 48, 53);
+    height: 12rem;
+    width: 100%;
+}
+
+
+.text_footer ,.text__footer--secundario{
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+.text_footer{
+    color: rgb(241, 184, 184);
+}
+.text__footer--secundario{
+    color: aliceblue;
+}
+
+
+
+div a {padding: 0 1rem;
+    color: rgb(255, 254, 253);
+    font-family: "Montserrat";
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/*nosotros*/
+
+
+
+.img_nosotros{flex: 1; 
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+    height: auto;
+}
+
+.sobre-nosotros__texto{ flex: 1; /* El texto ocupará el 50% del espacio disponible */
+    max-width: 100%; ;
+}
+
+/*cursos*/
+
+.display_cursos{
+    display: flex;
+    gap: 2rem;
+    border-bottom: 0.1rem solid black;
+    padding: 4rem;
+}
+
+
+
+.info_cursos{
+    font-size: 2rem;
+    font-family: "Montserrat";
+    text-transform: capitalize;
+    text-align: left;
+} 
+.text_infocursos{
+    text-align: left;
+}
+/* entrada de blog */
+
+.text_entrada{
+    color: rgb(95, 66, 66);
+    font-size: 2rem;
+}
+
+/*formulario*/
+.contacto_bg{
+    background-image: url(../imagenes/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    margin-top: 10rem;
+}
+.formulario{width: 95%;
+margin: -5rem auto 0 auto;
+background-color: white;
+padding: 5rem;}
+
+.campos{
+    display: flex;
+    margin: 1.2rem 0;
+    gap: 0.3rem;
+}
+
+.campos_label{flex: 0 0 9rem;
+text-align: center;
+font-size: 2rem;
+font-family: "Montserrat";
+font-weight: 700;
+color: burlywood;
+
+}
+.campos_input,.campo_textarea{flex: 1;
+    border: 0.2rem solid rgb(131, 148, 148);
+    height: 3rem;
+    font-size: 2rem;
+    font-family: "Montserrat";}
+    
+
+
+.campos_input{
+    height: 3rem;
+}
+
+.campo_textarea{
+    
+    height: 20rem;
+    
+    
+}
+    
+@media (min-width: 1168px){
+
+   .conteiner_nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin-bottom: 10rem;
+    }
+        
+            
+        
+}
+
+@media (max-width: 780px){
+    h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    h2{
+        font-size: 2.4rem;
+    }
+    .text_h1{
+        font-size: 4rem;
+    }
+    .button{
+        width: 100%;
+    }
+    .display_flex{flex-direction: column;}
+
+    .display_flex{
+        display: block;
+    }
+    .display_cursos{
+      display: block
+    }
+    .display_responsive{display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor_main{display: block;
+    }
+    .display_aside{margin-top: 10rem;
+        border-top: 0.2rem solid cadetblue;
+    }
+
+    div a{
+        padding: 2rem 2rem ;
+        font-size: 1.4rem;
+    }
+    .img_cursos{
+        max-width:100%;
+        height: 50%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    h4{
+        font-size: 2rem;
+        text-align: center;
+    }
+    ul{
+        text-align: center;
+    }
+
+    h3{
+        font-size:2.3rem;
+    }
+    .button_cursos{
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 1rem auto;
+    }
+    
+    .text_footer{font-size: 2.5rem;}
+    .text__footer--secundario{font-size: 2.5rem;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px){ 
+    
+    nav a {display: block;
+    padding: 1rem;}
+    h1{
+        font-size: 2rem;
+    }
+    .text_parrafo--header{font-size: 1.2rem;}
+
+    .text_h1{
+        font-size: 2rem;
+    }
+      h2{
+        font-size: 2rem;
+      
+    }
+        h3{
+        font-size: 2rem;
+    }
+          h4{
+        font-size: 1.8rem;
+        
+    }
+    
+    p{
+        font-size: 1.2rem;
+        
+    }
+    header{
+        height: 40rem;
+    }
+
+    .display_flex{flex-direction: column;}
+
+    .contenedor_main{
+        display: block;
+    }
+
+    li , .button_cursos , .precio_curso, .cupo_curso{font-size: 1.5rem;
+    }
+    .button{
+        width: 100%;
+    }
+
+    .button_cursos{
+        margin: 2rem auto;
+    }
+
+    .text_footer ,.text__footer--secundario{font-size: 1.9rem;}
+    div a{
+        font-size: 1.3rem;
+    }
+
+    .nuestro_blog3{border-bottom: 0.7rem solid rgb(0, 0, 0);}
+
+    
+
+    .display_cursos{
+        display: block;
+        display: block;
+        border: 0.2rem solid rgb(78, 20, 20);
+        margin-bottom: 2rem;
+        border-radius: 0.5rem;
+    }
+
+    .info_cursos{
+        font-size: 1.5rem;
+    }
+    div a{
+        padding: 0 0.5rem;
+    }
+    .campos_input{width: 60%;}
+
+    div a{padding: 1rem 1rem;}
+
+}
